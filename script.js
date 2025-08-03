@@ -38,5 +38,5 @@ form.addEventListener("submit", function (event) {
 
 limpar.addEventListener("click", function () {
     lista.innerHTML = "";
-})
+});
 
