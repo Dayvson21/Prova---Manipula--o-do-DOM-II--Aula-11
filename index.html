@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Prova - Manipulação do DOM II- Aula 11</h1>
 
     <h1>Formulário de cadastro</h1>
     <div>
-        <form action="">
+        <form action="" id="form">
             <section>
-                <label for="text">Nome:</label>
-                <input type="text" placeholder="Username...">
+                <label>Nome:</label>
+                <input id="usuario" type="text" placeholder="Username..." required>
             </section>
             <section>
-                <label for="password">Senha:</label>
-                <input type="password" placeholder="password...">
+                <label>Senha:</label>
+                <input id="senha" type="password" placeholder="password..." required>
             </section>
             <section>
-                <label for="tel">contato:</label>
-                <input type="tel" name="" id="" placeholder="contato...">
+                <label>contato:</label>
+                <input type="tel" id="contato" placeholder="contato..." pattern="\d+" required>
             </section>
             <section>
-                <label for="date">data de nascimento:</label>
-                <input type="date" name="" id="" placeholder="nascimento...">
+                <label>data de nascimento:</label>
+                <input type="date" name="" id="dataNascimento" placeholder="nascimento..." required>
             </section>
             <section>
-                <label for="">E-mail:</label>
-                <input type="email" name="" id="" e-mail...>
+                <label>E-mail:</label>
+                <input type="email" id="email" placeholder="e-mail..." required>
             </section>
             <button type="submit">Enviar</button>
         </form>
+        <button id="limpar">Limpar Lista</button>
+        <div id="lista"></div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
