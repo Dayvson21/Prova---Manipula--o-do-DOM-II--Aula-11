@@ -20,8 +20,8 @@ form.addEventListener("submit", function (event) {
         alert("O campo telefone deve conter apenas números!");
         return;
     }
-    
-    
+
+
     if (!usuario || !senha || !contato || !dataNascimento || !email) {
         alert("Todos os campos devem ser preenchidos!");
     }
@@ -36,7 +36,7 @@ form.addEventListener("submit", function (event) {
     form.reset();
 });
 
-limpar.addEventListener("click", function() {
+limpar.addEventListener("click", function () {
     lista.innerHTML = "";
 })
 
